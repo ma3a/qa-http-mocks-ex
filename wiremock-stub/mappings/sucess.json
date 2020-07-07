@@ -1,0 +1,13 @@
+{
+  "scenarioName": "Fail-Success-cycle",
+  "newScenarioState": "Failed",
+
+  "request": {
+    "method": "POST",
+    "url": "/externalapi/square"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "success_body.json"
+  }
+}

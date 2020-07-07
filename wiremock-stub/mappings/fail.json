@@ -1,0 +1,13 @@
+{
+  "scenarioName": "Fail-Success-cycle",
+  "requiredScenarioState": "Failed",
+  "newScenarioState": "Started",
+
+  "request": {
+    "method": "POST",
+    "url": "/externalapi/square"
+  },
+  "response": {
+    "fault": "MALFORMED_RESPONSE_CHUNK"
+  }
+}

@@ -1,0 +1,1 @@
+java -Dmockserver.initializationJsonPath="config.json" -jar mockserver.jar -serverPort 8082

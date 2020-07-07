@@ -1,0 +1,23 @@
+[
+  {
+    "httpRequest": {
+      "path": "/externalapi/square",
+      "headers": {
+        "x-trace-id": ["FAIL-.*"]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 500,
+      "body": "Ooops!"
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/externalapi/square"
+    },
+    "httpResponseTemplate": {
+      "template": "var req = JSON.parse(request.body.json); var res = req.value * req.value; return { statusCode: 200, body: JSON.stringify({result: res})};",
+      "templateType": "JAVASCRIPT"
+    }
+  }
+]
